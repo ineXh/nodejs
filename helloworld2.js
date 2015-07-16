@@ -4,7 +4,6 @@ function readFile(filename){
 	//return contents = fs.readFile(filename, function(contents){	});
 	//return fs.readFile(filename, cb);
 	var sq = ASQ();
-	
 	fs.readFile(filename, sq.errfcb());
 	return sq;
 }
@@ -15,6 +14,7 @@ function delayMsg(done,contents){
 	}, 1000);
 }
 function say(filename){
+
 	return readFile(filename)
 		.then(delayMsg);
 }

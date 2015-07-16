@@ -23,6 +23,8 @@ if (args.help || !args.file){
 var hello = require("./helloworld2.js");
 
 hello.say(args.file).val(function(content){
-		console.log(contents.toString());
-	}
-});
+	console.log(contents.toString());
+})
+.or(function(err){
+	console.error("Error: " + err);
+})

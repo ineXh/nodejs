@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   'helloworld' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose publish [ 'helloworld' ]
+5 silly cache add args [ 'helloworld', null ]
+6 verbose cache add spec helloworld
+7 silly cache add parsed spec { raw: 'helloworld',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'helloworld',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 silly addNamed helloworld@*
+9 verbose addNamed "*" is a valid semver range for helloworld
+10 silly addNameRange { name: 'helloworld', range: '*', hasData: false }
+11 silly mapToRegistry name helloworld
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/helloworld
+15 verbose addNameRange registry:https://registry.npmjs.org/helloworld not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/helloworld
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 10:35:47 AM
+19 verbose request id e57a4b920659bedf
+20 http request GET https://registry.npmjs.org/helloworld
+21 http 200 https://registry.npmjs.org/helloworld
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"AJ5BAM4OLVEHJNYH9LHRNSH9D"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '1221',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Fri, 24 Jul 2015 15:35:47 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     connection: 'close',
+22 silly get     'x-served-by': 'cache-dfw1834-DFW',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1437752147.891374,VS0,VE49',
+22 silly get     vary: 'Accept' } ]
+23 verbose get saving helloworld to C:\Users\siua\AppData\Roaming\npm-cache\registry.npmjs.org\helloworld\.cache.json
+24 silly addNameRange number 2 { name: 'helloworld', range: '*', hasData: true }
+25 silly addNameRange versions [ 'helloworld', [ '0.0.0' ] ]
+26 silly addNamed helloworld@0.0.0
+27 verbose addNamed "0.0.0" is a plain semver version for helloworld
+28 silly mapToRegistry name helloworld
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/helloworld
+32 verbose addRemoteTarball https://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz not in flight; adding
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz',
+33 verbose addRemoteTarball   '2e5cc78b0fe5708bde8410e0f4dd2b9e328dd357' ]
+34 info retry fetch attempt 1 at 10:35:48 AM
+35 info attempt registry request try #1 at 10:35:48 AM
+36 http fetch GET https://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz
+37 http fetch 200 https://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz
+38 silly fetchAndShaCheck shasum 2e5cc78b0fe5708bde8410e0f4dd2b9e328dd357
+39 verbose addTmpTarball C:\Users\siua\AppData\Local\Temp\npm-9716-79650133\registry.npmjs.org\helloworld\-\helloworld-0.0.0.tgz not in flight; adding
+40 verbose addTmpTarball already have metadata; skipping unpack for helloworld@0.0.0
+41 silly cache afterAdd helloworld@0.0.0
+42 verbose afterAdd C:\Users\siua\AppData\Roaming\npm-cache\helloworld\0.0.0\package\package.json not in flight; writing
+43 verbose afterAdd C:\Users\siua\AppData\Roaming\npm-cache\helloworld\0.0.0\package\package.json written
+44 silly publish { name: 'helloworld',
+44 silly publish   description: 'A hello world application for use on Nodejitsu.',
+44 silly publish   author: { name: 'AvianFlu', email: 'charlie@charlieistheman.com' },
+44 silly publish   scripts: { start: 'server.js' },
+44 silly publish   version: '0.0.0',
+44 silly publish   _npmJsonOpts:
+44 silly publish    { file: '/home/avian/.npm/helloworld/0.0.0/package/package.json',
+44 silly publish      wscript: false,
+44 silly publish      contributors: false,
+44 silly publish      serverjs: true },
+44 silly publish   _id: 'helloworld@0.0.0',
+44 silly publish   dependencies: {},
+44 silly publish   devDependencies: {},
+44 silly publish   engines: { node: '*' },
+44 silly publish   _engineSupported: true,
+44 silly publish   _npmVersion: '1.0.30',
+44 silly publish   _nodeVersion: 'v0.4.12',
+44 silly publish   _defaultsLoaded: true,
+44 silly publish   dist:
+44 silly publish    { shasum: '2e5cc78b0fe5708bde8410e0f4dd2b9e328dd357',
+44 silly publish      tarball: 'http://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz' },
+44 silly publish   maintainers: [ { name: 'avianflu', email: 'charlie@charlieistheman.com' } ],
+44 silly publish   directories: {},
+44 silly publish   _shasum: '2e5cc78b0fe5708bde8410e0f4dd2b9e328dd357',
+44 silly publish   _resolved: 'https://registry.npmjs.org/helloworld/-/helloworld-0.0.0.tgz',
+44 silly publish   _from: 'helloworld@*' }
+45 info prepublish helloworld@0.0.0
+46 verbose getPublishConfig undefined
+47 silly mapToRegistry name helloworld
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/helloworld
+51 verbose publish registryBase https://registry.npmjs.org/
+52 silly publish uploading C:\Users\siua\AppData\Roaming\npm-cache\helloworld\0.0.0\package.tgz
+53 verbose stack Error: auth required for publishing
+53 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+53 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:134:14
+53 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:55:3)
+53 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:104:3)
+53 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+53 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+53 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+53 verbose stack     at done (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:105:5)
+53 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:7:26)
+53 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+54 verbose cwd C:\GIT\node
+55 error Windows_NT 6.1.7601
+56 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "helloworld"
+57 error node v0.12.4
+58 error npm  v2.10.1
+59 error code ENEEDAUTH
+60 error need auth auth required for publishing
+60 error need auth You need to authorize this machine using `npm adduser`
+61 verbose exit [ 1, true ]

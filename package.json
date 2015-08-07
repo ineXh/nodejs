@@ -1,0 +1,15 @@
+{
+	"name":	"helloworld",
+	"version":	"0.0.1-a",
+	"description": "hello world",
+	"main": "./helloworld4.js",
+	"dependencies": {
+		"minimist": "~1.1.1"
+	},
+	"keywords": [
+		"hello",
+		"world"
+	],
+	"author": "anthony siu <anthonysiu@gmail.com>",
+	"license": "MIT"
+}

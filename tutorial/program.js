@@ -2,6 +2,7 @@
 //console.log(process.argv.length);
 //console.log(process.argv);
 // Exercise 2
+
 /*var sum = 0;
 for(i = 2; i < process.argv.length; i++){
 	sum += +process.argv[i]; 
@@ -9,6 +10,7 @@ for(i = 2; i < process.argv.length; i++){
 console.log(sum)*/
 
 // Exercise 3
+// My First IO
 /*var fs = require('fs')
 var file = process.argv[2]
 var Buffer = fs.readFileSync(file)
@@ -17,6 +19,7 @@ var str = Buffer.toString()
 console.log(str.split("\n").length-1)*/
 /*
 // Exercise 4
+// My First ASYNC IO
 var fs = require('fs')
 var file = process.argv[2]
 
@@ -27,6 +30,7 @@ fs.readFile(file, 'utf8', function (err, data) {
 });
 */
 /*// Exercise 5
+Filtered LS
 var fs = require('fs')
 var path = process.argv[2]
 var fileextension = process.argv[3]
@@ -44,6 +48,7 @@ fs.readdir(path, function (err, list) {
 })*/
 /*
 // Exercise 6
+// Make it Modular
 var mymodule = require('./mymodule.js')
 
 var path = process.argv[2]
@@ -59,6 +64,7 @@ mymodule(path, fileextension, function(err, filtered_list){
 })*/
 /*
 // Exercise 7
+// HTTP Client
 URL = process.argv[2]
 var http = require('http')
 //console.log(URL)
@@ -83,6 +89,7 @@ http.get(URL, function(response) {
 	})*/
 	
 /*// Exercise 8
+// HTTP Collect
 URL = process.argv[2]
 var http = require('http')
 var bl = require('bl')
@@ -95,6 +102,7 @@ http.get(URL, function(response) {
 })*/
 /*
 // Exercise 9
+// Juggling Async
 var http = require('http')
 var bl = require('bl')
 
@@ -133,6 +141,7 @@ http.get(URL2, function(response) {
 */
 /*
 // Exercise 10
+// Timer Server
 var net = require('net')
 port = process.argv[2]
 console.log("port: " + port)
@@ -149,6 +158,7 @@ var server = net.createServer(function(socket){
 server.listen(port)*/
 /*
 // Exercise 11
+// Http File Server
 var http = require('http')
 var fs = require('fs')
 port = process.argv[2]
@@ -160,6 +170,7 @@ server = http.createServer(function(request, response) {
 server.listen(process.argv[2]);*/
 
 /*// Exercise 12
+// Http Uppercaserer
 var http 	= require('http')
 var map 	= require('through2-map')
 server = http.createServer(function(request, response) {
@@ -169,6 +180,7 @@ server = http.createServer(function(request, response) {
 });
 server.listen(process.argv[2]);*/
 // Exercise 13
+// HTTP JSON API SERVER
 var http = require('http')
 var url = require('url')
 
